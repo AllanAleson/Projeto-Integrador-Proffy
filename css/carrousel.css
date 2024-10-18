@@ -1,0 +1,104 @@
+.carousel-container {
+    display: flex;
+    justify-content: center; /* Centraliza o carousel horizontalmente */
+    align-items: center;     /* Centraliza o carousel verticalmente (se necessário) */
+    margin: 0 auto;          /* Garante que o carousel ocupe o centro da página */
+    max-width: 100%;          /* Limita a largura do carousel */
+    overflow: hidden;        /* Esconde o conteúdo que ultrapassa os limites */
+}
+
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;             /* Garante que o wrapper do carousel ocupe a largura total */
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;               /* Adiciona um espaçamento entre os cards */
+    transition: transform 0.5s ease-in-out; /* Animação suave para a transição entre os cards */
+}
+
+.card {
+    flex: 0 0 auto;          /* Garante que os cards não cresçam além do necessário */
+    width: 150px;            /* Largura dos cards */
+    margin: 0 10px;          /* Espaçamento entre os cards */
+}
+
+button.prev, button.next {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: #0056b3;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden; /* Oculta os cards que estão fora da área visível */
+}
+
+.card {
+    flex: 0 0 calc(100% / 3); /* Três cards visíveis */
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #cccccc;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+button {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.card h5 {
+    color: #000; /* Título em preto */
+}
+
+.card p {
+    color: #1a1a1a; /* Texto da descrição em cinza escuro */
+}
+
+.card a {
+    color: white; /* Mantém o botão com texto branco */
+    text-decoration: none;
+}
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+  
+/* Elemento | http://127.0.0.1:5500/redes.html */
+
