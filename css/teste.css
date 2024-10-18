@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: #c7dce5;
+    font-family: Arial, sans-serif;
+}
+
+
+.logo img {
+    height: 100px;
+    margin-left: 20px;
+}
+
+.buttons {
+    display: flex;
+    margin-right: 20px;
+}
+
+.buttons button {
+    background-color: #00254E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background-color: #005f73;
+}
+
+.caixa-texto {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid #005f73;
+    margin-right: 10px;
+}
+
+/* referente ao header fim */
+
+.titulo {
+
+    background-color: #c7dce5;
+    color: #000000;
+    padding: 2px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/* referente ao texto início */
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    overflow: auto;
+    background-color: #c7dce50c;
+}
+
+.imagem_esquerda {
+    width: 489px;
+    height: 334px;
+    float: left;
+    margin-right: 15px;
+    clear: both;
+}
+
+.imagem_direita {
+    width: 489px;
+    height: 334px;
+    float: right;
+    margin-left: 15px;
+    clear: both;
+}
+
+.texto {
+    overflow: hidden;
+    font-size: 30px
+}
+
+h4 {
+    text-align: center;
+    font-size: 2em
+}
+
+/* referente ao texto fim */
+
+/* referente ao carrossel início */
+.swiper {
+    width: 1400px;
+    height: 650px;
+    margin-bottom: 20px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.swiper-slide img {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    
+}
+/* referente ao carrossel fim */

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/carrousel.css">
+    <link rel="stylesheet" href="css/header-13.css">
+    <link rel="stylesheet" href="css/teste.css">
+    <style>
+        /* CSS do header e sub-navegação */
+        .nav__wrapper {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav__item a {
+            text-decoration: none;
+            color: #222;
+            padding: 1.5rem 1rem;
+            display: block;
+        }
+
+        .nav__item a:hover {
+            background-color: #6b6b6b;
+            text-decoration: underline;
+        }
+
+        .sub-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .sub-nav li {
+            margin-right: 1.5rem;
+        }
+
+        .sub-nav li a {
+            text-decoration: none;
+            color: #fafafa;
+        }
+
+        .sub-nav li a:hover {
+            text-decoration: underline;
+            color: #007BFF;
+        }
+
+        /* Estilos do Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .modal iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            scrollbar-width: none;
+        }
+        
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 28px;
+            color: #aaa;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+    </style>
+</head>
+<body style="background-color: #f3f3f3">
+
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <div class="site-header__start">
+                <nav class="nav">
+                    <button class="nav__toggle __web-inspector-hide-shortcut__" aria-expanded="false" type="button" style="
+                    bottom: -50;
+                    top: 24px;
+                    bottom: 19px;
+                    margin-right: 50px;
+
+                ">≡</button>
+                    <ul class="nav__wrapper">
+                        <li class="nav__item"><a href="#">Home</a></li>
+                        <li class="nav__item"><a href="#">About</a></li>
+                        <li class="nav__item"><a href="#">Services</a></li>
+                        <li class="nav__item"><a href="#">Hire us</a></li>
+                        <li class="nav__item"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="IMAGENS/logo1.png" alt="Imagem" height="60px">
+
+
+            </div>
+            <div class="site-header__end">
+                
+                <ul class="sub-nav">
+                    <div class="search">
+                        <button class="search__toggle" aria-label="Open search">Search</button>
+                        <form class="search__form" action="">
+                            <label class="sr-only" for="search">Search</label>
+                            <input type="search" id="search" placeholder="pesquisar cursos"/>
+                        </form>
+                    </div>
+                    <!-- Botão para abrir o modal -->
+                    <li><a href="#" onclick="openModal()">login&nbsp;/&nbsp;registro</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- Iframe para carregar o formulário de login/registro -->
+            <iframe src="login.html"></iframe>
+        </div>
+    </div>
+
+    <script>
+        // Função para abrir o modal
+        function openModal() {
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        // Função para fechar o modal
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        // Fecha o modal se clicar fora do conteúdo
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+
+<div class="container-info">
+    <style>
+        .custom-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .left-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .left-image img {
+            width: 640px;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .right-text {
+            flex: 1;
+            padding-left: 20px;
+        }
+    </style>
+    <title>Imagem e Texto</title>
+</head>
+<body>
+    <div class="custom-container" style="
+    width: 1333px;
+">
+    <div class="left-image" style="
+    margin-left: 100px;
+">
+        <img src="img/aula_online 1.png" alt="Imagem">
+    </div>
+    <div class="right-text">
+        <h1>Nosso Objetivos</h1>
+        <h5>
+            Somos uma plataforma que viabiliza a educação facilitando o acesso professor-aluno atraves da nossa forma de divulgação.
+        </h5>
+        <h5>Aqui você pode encontrar diversos cursos feitos por professores ja formados, cada um com sua metodologia de ensino.
+
+        </h5>
+        <h5>
+            E quem sai ganhando é você aluno, você decide o curso que quer, pelo valor que deseja e o tempo que vai demorar pra concluir.
+
+        </h5>
+    </div>
+</div>
+    
+</div>
+<div class="carousel-container">
+    <button class="prev">&larr;</button>
+    <div class="carousel-wrapper">
+        <div class="carousel">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="img/img-ingles.webp" class="card-img-top" alt="Imagem do card">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de Excel</h5>
+                    <p class="card-text">20 Horas</p>
+                    <a href="#" class="btn btn-primary">Inscreva-se</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="img/img-ingles.webp" class="card-img-top" alt="Imagem do card">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de HTML</h5>
+                    <p class="card-text">20 Horas</p>
+                    <a href="#" class="btn btn-primary">Inscreva-se</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="img/img-ingles.webp" class="card-img-top" alt="Imagem do card">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de CSS</h5>
+                    <p class="card-text">30 Horas</p>
+                    <a href="#" class="btn btn-primary">Inscreva-se</a>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="img/img-ingles.webp" class="card-img-top" alt="Imagem do card">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de JavaScript</h5>
+                    <p class="card-text">40 Horas</p>
+                    <a href="#" class="btn btn-primary">Inscreva-se</a>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="img/img-ingles.webp" class="card-img-top" alt="Imagem do card">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de Python</h5>
+                    <p class="card-text">50 Horas</p>
+                    <a href="#" class="btn btn-primary">Inscreva-se</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="next">&rarr;</button>
+</div>
+<div id="containericons">
+    <style>
+        /* ===================== 
+           Menu Lateral de Ícones 
+           ===================== */
+        #icons {
+            width: 250px;
+            height: auto;
+            position: fixed;
+            top: 30%;
+            left: -200px; /* Mantém o menu fora da tela inicialmente */
+            border-radius: 10px;
+            transition: left 0.3s ease; /* Animação suave para o movimento */
+        }
+
+        #icons ul {
+            list-style: none;
+        }
+
+        #icons ul li {
+            display: block;
+            background: #131313;
+            padding: 10px;
+            height: 50px;
+            position: relative;
+            transition: all 0.5s ease;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #icons ul li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Cores individuais para cada ícone */
+        #icons ul li:nth-child(1) {
+            background: #ff0000;
+        }
+
+        #icons ul li:nth-child(2) {
+            background: #030379;
+        }
+
+        #icons ul li:nth-child(3) {
+            background: #1c1f1d;
+        }
+
+        #icons ul li:nth-child(4) {
+            background: #11aeef;
+        }
+
+        #icons ul li:nth-child(5) {
+            background: #ff00ff;
+        }
+
+        #icons ul li span {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: block;
+            right: 18px;
+            padding: 10px;
+        }
+
+        /* Efeito de hover nos ícones */
+        #icons ul li:hover {
+            cursor: pointer;
+            background: #131313;
+            opacity: 0.8;
+            border-left: 10px solid #fff;
+            transform: translateX(150px);
+        }
+    </style>
+    <nav id="icons">
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/@WebOnlineDesenvolve">
+                    meu youtube
+                    <span>
+                        <i class="fa fa-youtube-play"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com">
+                    meu facebook
+                    <span>
+                        <i class="fa fa-facebook"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com">
+                    meu github
+                    <span>
+                        <i class="fa fa-github"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/mynetwork/grow/">
+                    meu linkedin
+                    <span>
+                        <i class="fa fa-linkedin"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com">
+                    meu instagram
+                    <span>
+                        <i class="fa fa-instagram"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+ <footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Contato</h4>
+                <ul>
+                    <li>Email: contato@exemplo.com</li>
+                    <li>Telefone: (11) 1234-5678</li>
+                    <li>Endereço: Rua Exemplo, 123 - Cidade, Estado</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="header-13.js"></script>
+ <script src="app.js"></script>
+</body>
+</html>

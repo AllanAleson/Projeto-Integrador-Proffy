@@ -9,84 +9,13 @@
 }
 
 body, html {
+    background-color: #1f6583;
     position: relative;
     width: 100%;
     height: 100vh;
     overflow-x: hidden; /* Evita barra de rolagem horizontal */
 }
 
-/* ===================== 
-   Menu Lateral de Ícones 
-   ===================== */
-#icons {
-    width: 250px;
-    height: auto;
-    position: fixed;
-    top: 30%;
-    left: -200px; /* Mantém o menu fora da tela inicialmente */
-    border-radius: 10px;
-    transition: left 0.3s ease; /* Animação suave para o movimento */
-}
-
-#icons ul {
-    list-style: none;
-}
-
-#icons ul li {
-    display: block;
-    background: #131313;
-    padding: 10px;
-    height: 50px;
-    position: relative;
-    transition: all 0.5s ease;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-#icons ul li a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Cores individuais para cada ícone */
-#icons ul li:nth-child(1) {
-    background: #ff0000;
-}
-
-#icons ul li:nth-child(2) {
-    background: #030379;
-}
-
-#icons ul li:nth-child(3) {
-    background: #1c1f1d;
-}
-
-#icons ul li:nth-child(4) {
-    background: #11aeef;
-}
-
-#icons ul li:nth-child(5) {
-    background: #ff00ff;
-}
-
-#icons ul li span {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: block;
-    right: 18px;
-    padding: 10px;
-}
-
-/* Efeito de hover nos ícones */
-#icons ul li:hover {
-    cursor: pointer;
-    background: #131313;
-    opacity: 0.8;
-    border-left: 10px solid #fff;
-    transform: translateX(150px);
-}
 
 /* ===================== 
    Rodapé (Footer) 
@@ -204,7 +133,7 @@ div.section:nth-child(2) > h4:nth-child(1) {
    ===================== */
 .site-header {
     position: relative; /* Mudança de fixed para relative */
-    background-color: #1b1b1b;
+    background-color: #00254E;
     z-index: 10; /* Certifique-se de que o header esteja acima do conteúdo */
 }
 
@@ -313,6 +242,7 @@ div.section:nth-child(2) > h4:nth-child(1) {
         position: absolute;
         right: 1rem;
         top: 0.65rem;
+        
     }
 }
 
@@ -328,6 +258,7 @@ div.section:nth-child(2) > h4:nth-child(1) {
 
 .search__form {
     display: none;
+    
 }
 
 .search__form.active {
@@ -347,6 +278,7 @@ div.section:nth-child(2) > h4:nth-child(1) {
         right: 0;
         top: 100%;
         background-color: red;
+        
     }
 
     .search__form input {
@@ -398,8 +330,8 @@ div.section:nth-child(2) > h4:nth-child(1) {
 /* ===================== 
    Outros Estilos 
    ===================== */
-p {
-    color: #fff;
+h6 {
+    color: #fcfcfc;
 }
 
 p span {
@@ -424,27 +356,17 @@ p a {
 }
 
 
-/* Elemento | http://127.0.0.1:5500/PI/redes.html */
+
 
 body > footer:nth-child(7) {
-    /* margin-top: 500px; */
-    /* margin-top: 50px; */
-    /* margin-top: 5px; */
-    /* margin-bottom: 100px; */
-    /* margin-bottom: 10px; */
-    /* margin-bottom: 1px; */
-    /* margin-top: 1px; */
-    /* margin-top: 10px; */
+
     margin-top: 100px;
   }
   
 
   
   .container-info {
-    /* margin-top: 100px; */
-    /* margin-top: 10px; */
-    /* margin-top: 1px; */
-    /* margin-top: 6px; */
+
     margin-top: 60px;
   }
   
@@ -455,10 +377,113 @@ body > footer:nth-child(7) {
     margin-bottom: 40px;
   }
   
-/* Elemento | http://127.0.0.1:5500/PI/redes.html */
+
 
 .nav__wrapper {
 
     top: 84px;
+  }
+  
+/* social.css | http://127.0.0.1:5500/css/social.css */
+
+.search__form input {
+
+    border: 0px;
+    border-radius: 9px;
+    padding: 0.5rem;
+  }
+  
+  /* bootstrap.min.css | https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css */
+  
+  button, input, optgroup, select, textarea {
+
+    margin: 0px;
+  }
+  
+  /* Elemento | http://127.0.0.1:5500/homepage.html */
+  
+  #search {
+
+    margin-right: 30px;
+    margin-top: 15px;
+  }
+  
+  /* Elemento | http://127.0.0.1:5500/homepage.html */
+  
+  .sub-nav > li:nth-child(2) > a:nth-child(1) {
+
+    margin-top: 2px;
+  }
+  
+  /* Elemento | http://127.0.0.1:5500/homepage.html */
+  
+  .sub-nav > li:nth-child(2) {
+
+    margin-top: 25px;
+  }
+  
+  /* Elemento | http://127.0.0.1:5500/homepage.html */
+  
+  .site-header__start > img:nth-child(2) {
+    /* margin-bottom: 10px; */
+    margin-bottom: 1px;
+  }
+  
+
+  
+  .nav {
+
+    margin-left: 10px;
+  }
+  
+
+  
+  .nav__toggle {
+
+    margin-right: 40px;
+  }
+  
+/* Elemento | http://127.0.0.1:5500/homepage.html */
+
+.custom-container {
+
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+  
+  /* Elemento | http://127.0.0.1:5500/homepage.html */
+  
+  .container-info {
+    margin-top: 0px;
+  }
+  
+  /* Inline #7 | http://127.0.0.1:5500/homepage.html */
+  
+  .left-image img {
+
+    width: 61%;
+    height: 49%;
+  }
+  
+  /* Elemento | http://127.0.0.1:5500/homepage.html */
+  
+  .left-image {
+    /* margin-left: 100px; */
+    margin-left: 0px;
+  }
+  
+  /* Elemento | http://127.0.0.1:5500/homepage.html */
+  
+  .right-text {
+
+    margin-right: 85px;
+  }
+  
+
+/* Inline #7 | http://127.0.0.1:5500/homepage.html */
+
+.left-image img {
+    width: 95%;
+    height: 100%;
   }
   
